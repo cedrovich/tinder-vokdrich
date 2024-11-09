@@ -1,0 +1,36 @@
+name: tinder_yt
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.0.1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.20.0 # Updated to the latest known stable release.
+  cupertino_icons: ^1.0.6
+  persistent_bottom_nav_bar_v2: ^5.3.1 # Latest for potential bug fixes.
+  swipe_cards: ^1.0.0 # Downgraded for compatibility.
+  dotted_border: ^2.0.0 # Updated to latest stable.
+  image_cropper: ^3.0.0 # Updated to latest stable.
+  image_picker: ^1.0.0 # Updated to known stable version.
+  bloc: ^8.1.4 # Maintained stable version.
+  flutter_bloc: ^8.1.4 # Maintained compatible version with bloc.
+  equatable: ^2.0.5
+  user_repository:
+    path: packages/user_repository
+  geolocator: ^9.0.2 # Latest stable for compatibility.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1 # Ensuring compatibility.
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/icons/

@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "tinder_yt-main"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "tinder_yt-main-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
