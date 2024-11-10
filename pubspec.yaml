@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   firebase_core: ^2.20.0 # Updated to the latest known stable release.
+  firebase_app_check: ^0.2.0+1
   cupertino_icons: ^1.0.6
   persistent_bottom_nav_bar_v2: ^5.3.1 # Latest for potential bug fixes.
   swipe_cards: ^1.0.0 # Downgraded for compatibility.
@@ -22,6 +23,7 @@ dependencies:
   user_repository:
     path: packages/user_repository
   geolocator: ^9.0.2 # Latest stable for compatibility.
+  firebase_auth: ^4.16.0
 
 dev_dependencies:
   flutter_test:

@@ -16,7 +16,7 @@ class _OtherProfileDetailsScreenState extends State<OtherProfileDetailsScreen> {
 	@override
   Widget build(BuildContext context) {
     return Scaffold(
-			backgroundColor: Theme.of(context).colorScheme.background,
+			backgroundColor: Theme.of(context).colorScheme.surface,
 			body: SafeArea(
 				child: Stack(
 					alignment: Alignment.bottomCenter,
@@ -26,7 +26,7 @@ class _OtherProfileDetailsScreenState extends State<OtherProfileDetailsScreen> {
 								padding: const EdgeInsets.only(bottom: 50.0),
 								child: Column(
 									children: [
-										Container(
+										SizedBox(
 											width: MediaQuery.of(context).size.width,
 											height: MediaQuery.of(context).size.height * 0.6,
 											child: Hero(

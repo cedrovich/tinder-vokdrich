@@ -31,7 +31,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Theme.of(context).colorScheme.surface,
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           final user = context.read<AuthenticationBloc>().state.user;
@@ -46,7 +46,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         child: const Icon(CupertinoIcons.check_mark, color: Colors.white),
       ),
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.background,
+        backgroundColor: Theme.of(context).colorScheme.surface,
         elevation: 0,
         title: const Text('Profile'),
         actions: [
@@ -88,7 +88,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     itemBuilder: (context, i) {
                       var user = context.read<AuthenticationBloc>().state.user;
                       bool hasPicture = user != null &&
-                          user.pictures != null &&
                           user.pictures.isNotEmpty &&
                           i < user.pictures.length;
 

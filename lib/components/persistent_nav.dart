@@ -83,7 +83,7 @@ class PersistentTabScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Text('Persistent Tab Screen')),
+      body: const Center(child: Text('Persistent Tab Screen')),
       bottomNavigationBar: CustomNavBar(
         navBarConfig: NavBarConfig(
           items: [

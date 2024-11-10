@@ -67,4 +67,13 @@ flutter {
     source '../..'
 }
 
-dependencies {}
+dependencies {
+    // Firebase Authentication
+    implementation 'com.google.firebase:firebase-auth:21.0.1' // Usa la versión más reciente disponible
+
+    // Firebase App Check
+    implementation 'com.google.firebase:firebase-appcheck:16.0.0' // Usa la versión más reciente disponible
+
+    // Play Integrity API para App Check
+    implementation 'com.google.firebase:firebase-appcheck-playintegrity:16.0.0' // Usa la versión más reciente disponible
+}
